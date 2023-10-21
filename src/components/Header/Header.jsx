@@ -1,13 +1,15 @@
 import classes from './Header.module.css'
 import mainLogo from '../../assets/images/main-logo.png';
+import { NavLink } from 'react-router-dom'
+
 function Header() {
     return (
         <>
             <header className={classes.header}>
-                <a href="/" className={classes.logo__block}>
+                <NavLink to="/" className={classes.logo__block}>
                     <img src={mainLogo} alt="main logo" className={classes.logo} />
                     <p className={classes.logo__wordmark}>Web<span>Universe</span></p>
-                </a>
+                </NavLink>
                 <nav className={classes.nav}>
                     <ul className={classes.list}>
                         <li className={classes.item}><a href="#" className={classes.link}>Juniour курсы</a></li>
