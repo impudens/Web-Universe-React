@@ -12,13 +12,15 @@ function Header() {
                 </NavLink>
                 <nav className={classes.nav}>
                     <ul className={classes.list}>
-                        <li className={classes.item}><a href="#" className={classes.link}>Juniour курсы</a></li>
-                        <li className={classes.item}><a href="#" className={classes.link}>Middle+ курсы</a></li>
-                        <li className={classes.item}><a href="#" className={classes.link}>Пет проекты</a></li>
+                        <li className={classes.item}><NavLink to="/" className={navData => navData.isActive ? classes.link__active : classes.link}>Главная</NavLink></li>
+                        <li className={classes.item}><NavLink to="/frontend" className={navData => navData.isActive ? classes.link__active : classes.link}>Frontend</NavLink></li>
+                        <li className={classes.item}><NavLink to="/backend" className={navData => navData.isActive ? classes.link__active : classes.link}>Backend</NavLink></li>
+                        <li className={classes.item}><NavLink to="/level-up" className={navData => navData.isActive ? classes.link__active : classes.link}>Middle+</NavLink></li>
+                        <li className={classes.item}><NavLink to="/pet-projects" className={navData => navData.isActive ? classes.link__active : classes.link}>Пет проекты</NavLink></li>
                     </ul>
                     <div className={classes.login__register}>
-                        <a href="#" className={classes.login__btn}>Вход</a>
-                        <a href="#" className={classes.register__btn}>Регистрация</a>
+                        <NavLink to="/login" className={classes.login__btn}>Вход</NavLink>
+                        <NavLink to="/register" className={classes.register__btn}>Регистрация</NavLink>
                     </div>
                 </nav>
             </header >

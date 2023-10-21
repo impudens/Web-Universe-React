@@ -9,9 +9,17 @@
     padding: 20px;
 }
 
-.image {
+.image__block {
     height: 5em;
     width: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    height: 5em;
+    width: auto;
 }
 
 .description {
@@ -30,6 +38,11 @@
     cursor: pointer;
     transition: border-color 0.25s;
     color: white;
+}
+
+.title {
+    text-transform: uppercase;
+
 }
 
 .link:hover {

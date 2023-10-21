@@ -8,7 +8,7 @@ function Footer() {
                 <ul className={classes.list}>
                     <li className={classes.item}>
                         <img src={telegramLogo} className={classes.logo}></img>
-                        <a href="https://t.me/troff_webdev" className={classes.link}>troff_webdev</a>
+                        <a href="https://t.me/troff_webdev" target='_blank' className={classes.link}>troff_webdev</a>
                     </li>
                 </ul>
             </footer >
