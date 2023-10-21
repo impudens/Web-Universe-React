@@ -14,3 +14,18 @@
 .title {
     text-transform: uppercase;
 }
+
+.swiper {
+    margin: 0 !important;
+    max-height: 450px;
+    min-height: 350px;
+    display: flex;
+    align-items: flex-start;
+    padding: 0 50px 50px 50px;
+}
+
+.swiper__slide {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}

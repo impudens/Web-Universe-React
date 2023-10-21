@@ -40,14 +40,14 @@ const coursesData = {
             title: 'PHP',
             description: 'Профессиональная веб-разработка',
             link: '#',
-            linkName: 'PHP LVL 1'
+            linkName: 'in dev'
         },
         {
             image: '/assets/images/yii-logo.png',
             title: 'PHP И YII',
             description: 'Архитектура сложных веб-сервисов',
             link: '#',
-            linkName: 'PHP LVL 2'
+            linkName: 'in dev'
         }
         ,
         {
@@ -55,21 +55,21 @@ const coursesData = {
             title: 'PHP И LARAVEL',
             description: 'Создание современных бэкендов',
             link: '#',
-            linkName: 'PHP LVL 3'
+            linkName: 'in dev'
         },
         {
             image: '/assets/images/node.js.png',
             title: 'NODE.JS',
             description: 'Профессиональная разработка REST API',
             link: '#',
-            linkName: 'NODE.JS LVL 3'
+            linkName: 'in dev'
         },
         {
             image: '/assets/images/node.js.png',
             title: 'NODE.JS',
             description: 'Node.js и Nest.js. Микросервисная архитектура',
             link: '#',
-            linkName: 'NODE.JS LVL 3'
+            linkName: 'in dev'
         }
 
     ],
@@ -77,35 +77,35 @@ const coursesData = {
         {
             image: '/assets/images/git-logo.png',
             title: 'Git | GitHub',
-            description: 'Для разработчиков, которые хотят научиться работать с самой распространённой системой управления версиями — Git.',
+            description: 'Для разработчиков, которые хотят научиться работать с Git',
             link: 'https://cloud.mail.ru/public/9VXY/Hg8pJYXrm',
             linkName: 'Скачать'
         },
         {
             image: '/assets/images/css-logo.png',
             title: 'CSS-in-JS',
-            description: 'Курс научит работать с CSS-in-JS — новым подходом к стилизации веб-приложений.',
+            description: 'Курс научит работать с CSS-in-JS — новым подходом к стилизации веб-приложений',
             link: 'https://cloud.mail.ru/public/USw9/PSfzRLgF6',
             linkName: 'Скачать'
         },
         {
             image: '/assets/images/figma-logo.png',
             title: 'Дизайн для фронтендеров',
-            description: 'Изучите принципы дизайна интерфейсов и пользовательского опыта и применяйте знания в своих проектах без привлечения дизайнера.',
+            description: 'Изучите основы дизайна интерфейсов',
             link: 'https://cloud.mail.ru/public/r6Ni/M2WZkmuzC',
             linkName: 'Скачать'
         },
         {
             image: '/assets/images/react-logo.svg',
             title: 'Вёрстка React-компонентов',
-            description: 'На этом курсе вы научитесь собирать интерфейсы в экосистеме React с нуля и создавать интерактивные React-компоненты.',
+            description: 'На этом курсе вы научитесь собирать и создавать интерактивные React-компоненты',
             link: 'https://cloud.mail.ru/public/bswP/PeJvC61HB',
             linkName: 'Скачать'
         },
         {
             image: '/assets/images/mentor-logo.png',
             title: 'Курсы наставничества',
-            description: 'Узнаете, какие навыки нужны наставнику, как правильно давать обратную связь и делать код-ревью, как мотивировать других и работать с собственной мотивацией.',
+            description: 'Необходимая база по наставничеству',
             link: 'https://cloud.mail.ru/public/cfzK/jnrMikfoU',
             linkName: 'Скачать'
         },
@@ -119,14 +119,14 @@ const coursesData = {
         {
             image: '/assets/images/html-css-logo.png',
             title: 'Подготовка верстки для CMS',
-            description: 'Разработчику мидл-уровня важно верстать так, чтобы результат было удобно интегрировать в CMS и при интеграции не было проблем.',
+            description: 'Разработчику мидл-уровня важно верстать так, чтобы результат было удобно интегрировать в CMS',
             link: 'https://cloud.mail.ru/public/Kqje/oXw86r1Bi',
             linkName: 'Скачать'
         },
         {
             image: '/assets/images/graph-logo.png',
             title: 'Алгоритмы и структуры данных',
-            description: 'Понимание структур данных и алгоритмов позволяет писать более эффективный код, правильно выстраивать архитектуру проекта и отдельных модулей.',
+            description: 'Понимание структур данных и алгоритмов позволяет писать более эффективный код',
             link: 'https://cloud.mail.ru/public/rFge/5C21qKNMB',
             linkName: 'Скачать'
         },
@@ -174,7 +174,7 @@ const coursesData = {
         },
         {
             image: '/assets/images/vue-logo.png',
-            title: 'Vue.js 3. Разработка клиентских приложений',
+            title: 'Vue.js 3',
             description: 'Задача курса — научить студента создавать проект на Vue.js 3 с нуля.',
             link: '#',
             linkName: 'in dev'
