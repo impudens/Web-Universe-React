@@ -1,15 +1,15 @@
 import CoursePreview from './Course/CoursePreview';
-import './CoursesList.css';
+import classes from './CoursesList.module.css';
 import coursesData from '../../data/coursesData';
 
 function CoursesList() {
     return (
 
-        <div>
+        <>
             {Object.keys(coursesData).map(courseTitle => (
-                <section className="courses__section" key={courseTitle}>
-                    <h2 className="courses__title">{courseTitle}</h2>
-                    <ul className="courses__list">
+                <section className={classes.section} key={courseTitle}>
+                    <h2 className={classes.title}>{courseTitle}</h2>
+                    <ul className={classes.list}>
                         {Object.keys(coursesData[courseTitle]).map(courseKey => (
                             <CoursePreview
                                 key={courseKey}
@@ -23,7 +23,7 @@ function CoursesList() {
                     </ul>
                 </section>
             ))}
-        </div>
+        </>
     );
 }
 

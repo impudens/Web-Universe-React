@@ -1,4 +1,4 @@
-.page-header {
+.header {
     width: 100%;
     list-style-type: none;
     display: flex;
@@ -7,14 +7,14 @@
 
 
 /* Page logo START*/
-.page-header__logo-and-wordmark {
+.logo__block {
     display: flex;
     align-items: center;
     gap: 1em;
     text-decoration: none;
 }
 
-@keyframes page-header__logo-spin {
+@keyframes logo-spin {
     0% {
         transform: rotate(0deg);
     }
@@ -28,43 +28,43 @@
     }
 }
 
-.page-header__logo {
+.logo {
     height: 4em;
-    animation: page-header__logo-spin infinite 20s linear;
+    animation: logo-spin infinite 20s linear;
 
 }
 
 
-.page-header__logo-and-wordmark:hover {
-    .page-header__logo {
-        filter: drop-shadow(0 0 1em #920747aa);
-    }
+.logo__block:hover .logo {
 
-    .page-header__wordmark span {
-        color: #e11457;
-    }
+    filter: drop-shadow(0 0 1em #920747aa);
 }
 
-.page-header__wordmark {
+.logo__block:hover .logo__wordmark span {
+    color: #e11457;
+}
+
+
+.logo__wordmark {
     font-weight: 500;
     text-transform: uppercase;
     color: white;
     font-size: 1.5em;
 }
 
-.page-header__wordmark span {
+.logo__wordmark span {
     color: #fc6c9b;
 }
 
 /* Page logo END*/
 
-.header__nav {
+.nav {
     display: flex;
     width: 100%;
     justify-content: space-between;
 }
 
-.nav__list {
+.list {
     list-style-type: none;
     display: flex;
     gap: 2em;
@@ -73,7 +73,7 @@
     align-items: center;
 }
 
-.nav__link {
+.link {
     text-transform: uppercase;
     font-size: 1em;
     text-decoration: none;
@@ -81,11 +81,11 @@
     color: white;
 }
 
-.nav__link:hover {
+.link:hover {
     color: #c85685;
 }
 
-.header__login-register {
+.login__register {
     display: flex;
     gap: 1em;
     align-items: center;

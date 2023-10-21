@@ -1,14 +1,14 @@
-import './CoursePreview.css'
+import classes from './CoursePreview.module.css'
 
 
 function CoursePreview(props) {
     return (
         <>
-            <li className='course__item'>
-                <img src={props.image} alt="courses image" className="course__image" />
-                <h3 className="course__name">{props.title} </h3>
-                <p className="course__description">{props.description}</p>
-                <a href={props.link} className="course__link">{props.linkName}</a>
+            <li className={classes.item}>
+                <img src={props.image} alt="course image" className={classes.image} />
+                <h3 className={classes.title}>{props.title} </h3>
+                <p className={classes.description}>{props.description}</p>
+                <a href={props.link} className={classes.link}>{props.linkName}</a>
             </li>
         </>
     );

@@ -1,4 +1,4 @@
-.course__item {
+.item {
     width: 240px;
     display: flex;
     flex-direction: column;
@@ -9,16 +9,16 @@
     padding: 20px;
 }
 
-.course__image {
+.image {
     height: 5em;
     width: 5em;
 }
 
-.course__description {
+.description {
     height: 100%;
 }
 
-.course__link {
+.link {
     text-decoration: none;
     border-radius: 8px;
     border: 1px solid transparent;
@@ -32,7 +32,7 @@
     color: white;
 }
 
-.course__link:hover {
+.link:hover {
     background-color: #373636;
     color: white;
 }
