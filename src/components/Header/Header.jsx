@@ -1,22 +1,26 @@
-import './Header.css'
-import mainLogo from '../../assets/images/main-logo.png';
+import classes from './Header.module.css'
+import mainLogo from '/assets/images/main-logo.png';
+import { NavLink } from 'react-router-dom'
+
 function Header() {
     return (
         <>
-            <header className="page-header">
-                <a href="index.html" className="page-header__logo-and-wordmark">
-                    <img src={mainLogo} alt="main logo" className='page-header__logo' />
-                    <p className="page-header__wordmark">Web<span>Universe</span></p>
-                </a>
-                <nav className="header__nav">
-                    <ul className="nav__list">
-                        <li className="nav__item"><a href="#" className="nav__link">Juniour курсы</a></li>
-                        <li className="nav__item"><a href="#" className="nav__link">Middle+ курсы</a></li>
-                        <li className="nav__item"><a href="#" className="nav__link">Пет проекты</a></li>
+            <header className={classes.header}>
+                <NavLink to="/" className={classes.logo__block}>
+                    <img src={mainLogo} alt="main logo" className={classes.logo} />
+                    <p className={classes.logo__wordmark}>Web<span>Universe</span></p>
+                </NavLink>
+                <nav className={classes.nav}>
+                    <ul className={classes.list}>
+                        <li className={classes.item}><NavLink to="/" className={navData => navData.isActive ? classes.link__active : classes.link}>Главная</NavLink></li>
+                        <li className={classes.item}><NavLink to="/frontend" className={navData => navData.isActive ? classes.link__active : classes.link}>Frontend</NavLink></li>
+                        <li className={classes.item}><NavLink to="/backend" className={navData => navData.isActive ? classes.link__active : classes.link}>Backend</NavLink></li>
+                        <li className={classes.item}><NavLink to="/level-up" className={navData => navData.isActive ? classes.link__active : classes.link}>Middle+</NavLink></li>
+                        <li className={classes.item}><NavLink to="/pet-projects" className={navData => navData.isActive ? classes.link__active : classes.link}>Пет проекты</NavLink></li>
                     </ul>
-                    <div className="header__login-register">
-                        <a href="#" className="login__btn">Вход</a>
-                        <a href="#" className="register__btn">Регистрация</a>
+                    <div className={classes.login__register}>
+                        <NavLink to="/login" className={classes.login__btn}>Вход</NavLink>
+                        <NavLink to="/register" className={classes.register__btn}>Регистрация</NavLink>
                     </div>
                 </nav>
             </header >
