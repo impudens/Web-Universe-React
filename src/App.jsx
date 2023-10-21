@@ -14,7 +14,7 @@ function App() {
           <Header />
           <main>
             <Routes>
-              <Route path='/html-and-css-level-one' element={<CourseModule />} />
+              <Route path='/frontend/html-and-css-level-one' element={<CourseModule />} />
               <Route path='/' element={<CoursesList />} />
             </Routes>
           </main>
