@@ -1,0 +1,130 @@
+.page-header {
+    height: 100px;
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Page logo START*/
+.page-header__logo-and-wordmark {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+}
+
+@keyframes page-header__logo-spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(30deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.page-header__logo {
+    height: 100px;
+    animation: page-header__logo-spin infinite 20s linear;
+
+}
+
+
+.page-header__logo-and-wordmark:hover {
+    .page-header__logo {
+        filter: drop-shadow(0 0 1em #920747aa);
+    }
+
+    .page-header__wordmark span {
+        color: #e11457;
+    }
+}
+
+.page-header__wordmark {
+    font-weight: 500;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.5em;
+}
+
+.page-header__wordmark span {
+    color: #fc6c9b;
+}
+
+/* Page logo END*/
+
+.header__nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.nav__list {
+    list-style-type: none;
+    display: flex;
+    gap: 40px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__link {
+    font-size: 1em;
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+}
+
+.nav__link:hover {
+    color: #c85685;
+}
+
+.header__login-register {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.login__btn {
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+    color: white;
+}
+
+.login__btn:hover {
+    color: #c85685;
+}
+
+.register__btn {
+    text-decoration: none;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: border-color 0.25s;
+    color: white;
+}
+
+.register__btn:hover {
+    background-color: #373636;
+    color: white;
+}
+
+.register__btn:focus,
+.register__btn:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+}
