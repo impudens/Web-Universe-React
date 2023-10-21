@@ -1,5 +1,5 @@
 import classes from './Header.module.css'
-import mainLogo from '../../assets/images/main-logo.png';
+import mainLogo from '/assets/images/main-logo.png';
 import { NavLink } from 'react-router-dom'
 
 function Header() {

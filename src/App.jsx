@@ -1,4 +1,4 @@
-import './assets/styles/App.css'
+import './/styles/App.css'
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import CoursesList from './components/Courses/CoursesList';

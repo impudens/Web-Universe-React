@@ -1,5 +1,5 @@
 import classes from './Footer.module.css'
-import telegramLogo from '../../assets/images/telegram-image.svg';
+import telegramLogo from '/assets/images/telegram-image.svg';
 
 function Footer() {
     return (
