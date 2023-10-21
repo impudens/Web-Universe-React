@@ -4,7 +4,7 @@ function Header() {
     return (
         <>
             <header className={classes.header}>
-                <a href="index.html" className={classes.logo__block}>
+                <a href="/" className={classes.logo__block}>
                     <img src={mainLogo} alt="main logo" className={classes.logo} />
                     <p className={classes.logo__wordmark}>Web<span>Universe</span></p>
                 </a>

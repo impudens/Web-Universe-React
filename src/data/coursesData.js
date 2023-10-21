@@ -4,7 +4,7 @@ const coursesData = {
             image: 'src/assets/images/html-css-logo.png',
             title: 'HTML и CSS',
             description: 'Профессиональная вёрстка сайтов',
-            link: '#',
+            link: '/html-and-css-level-one',
             linkName: 'Верстка LVL 1'
         },
         layout_lvl_2: {
