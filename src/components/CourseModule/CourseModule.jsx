@@ -1,7 +1,7 @@
 import classes from './CourseModule.module.css';
-import layoutData from '../../data/layoutData';
 
-function CourseModule() {
+function CourseModule(props) {
+    const layoutData = props.data;
     return (
         <>
             <section className={classes.course}>
