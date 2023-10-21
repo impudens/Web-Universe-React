@@ -1,0 +1,32 @@
+.page-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.socials-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.socials-list__item {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.socials-list__logo {
+    width: 1.5em;
+}
+
+.socials-list__link {
+    color: white;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-decoration: none;
+}
