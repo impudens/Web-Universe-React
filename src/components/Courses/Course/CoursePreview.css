@@ -1,0 +1,38 @@
+.course__item {
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    border: 1px solid white;
+    border-radius: 35px;
+    padding: 20px;
+}
+
+.course__image {
+    height: 5em;
+    width: 5em;
+}
+
+.course__description {
+    height: 100%;
+}
+
+.course__link {
+    text-decoration: none;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: border-color 0.25s;
+    color: white;
+}
+
+.course__link:hover {
+    background-color: #373636;
+    color: white;
+}

@@ -4,11 +4,11 @@ import telegramLogo from '../../assets/images/telegram-image.svg';
 function Footer() {
     return (
         <>
-            <footer class="page-footer">
-                <ul class="socials-list">
-                    <li class="socials-list__item">
-                        <img src={telegramLogo} class="socials-list__logo"></img>
-                        <a href="https://t.me/troff_webdev" class="socials-list__link">troff_webdev</a>
+            <footer className="page-footer">
+                <ul className="socials-list">
+                    <li className="socials-list__item">
+                        <img src={telegramLogo} className="socials-list__logo"></img>
+                        <a href="https://t.me/troff_webdev" className="socials-list__link">troff_webdev</a>
                     </li>
                 </ul>
             </footer >
