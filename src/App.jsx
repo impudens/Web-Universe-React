@@ -1,9 +1,12 @@
-import './/styles/App.css'
+import './styles/App.css'
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import CoursesList from './components/Courses/CoursesList';
-import CourseModule from './components/CourseModule/CourseModule';
+import CourseOverview from './components/CourseOverview/CourseOverview';
+import CourseChapter from './components/CourseOverview/CourseChapter/CourseChapter';
 import { layoutDataLvlFirst, layoutDataLvlSecond, jsDataLvlOne, jsDataLvlSecond, reactData } from './data/coursesModuletData';
+import { layoutDataLvlFirst_1_1 } from './data/chaptersData';
+
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -15,11 +18,12 @@ function App() {
           <Header />
           <main>
             <Routes>
-              <Route path='/frontend/html-and-css-level-one' element={<CourseModule data={layoutDataLvlFirst} />} />
-              <Route path='/frontend/html-and-css-level-second' element={<CourseModule data={layoutDataLvlSecond} />} />
-              <Route path='/frontend/javascript-lvl-one' element={<CourseModule data={jsDataLvlOne} />} />
-              <Route path='/frontend/javascript-lvl-second' element={<CourseModule data={jsDataLvlSecond} />} />
-              <Route path='/frontend/react' element={<CourseModule data={reactData} />} />
+              <Route path='/frontend/html-and-css-level-one' element={<CourseOverview data={layoutDataLvlFirst} />} />
+              <Route path='/frontend/html-and-css-level-one/:chapterId' element={<CourseChapter data={layoutDataLvlFirst_1_1} />} />
+              <Route path='/frontend/html-and-css-level-second' element={<CourseOverview data={layoutDataLvlSecond} />} />
+              <Route path='/frontend/javascript-lvl-one' element={<CourseOverview data={jsDataLvlOne} />} />
+              <Route path='/frontend/javascript-lvl-second' element={<CourseOverview data={jsDataLvlSecond} />} />
+              <Route path='/frontend/react' element={<CourseOverview data={reactData} />} />
               <Route path='/' element={<CoursesList />} />
             </Routes>
           </main>

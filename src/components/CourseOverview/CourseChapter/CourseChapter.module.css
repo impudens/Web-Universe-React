@@ -1,0 +1,30 @@
+.course {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    gap: 2em;
+    align-items: center;
+}
+
+.title {
+    text-transform: uppercase;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1em;
+    max-width: 50%;
+}
+
+.item {
+    text-align: left;
+}
+
+
+
+.link {
+    text-decoration: none;
+    font-weight: 500;
+}

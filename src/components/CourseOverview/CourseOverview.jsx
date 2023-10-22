@@ -1,4 +1,5 @@
-import classes from './CourseModule.module.css';
+import classes from './CourseOverview.module.css';
+import { NavLink } from 'react-router-dom'
 
 function CourseModule(props) {
     const layoutData = props.data;
@@ -9,7 +10,7 @@ function CourseModule(props) {
                 <ol className={classes.list}>
                     {layoutData.map((element, index) => (
                         <li className={classes.item} key={index}>
-                            <a href={element.link} className={classes.link}>{element.title}</a>
+                            <NavLink to={element.link} className={classes.link}>{element.title}</NavLink>
                             <p className={classes.description}>{element.description}</p>
                         </li>
                     ))}
