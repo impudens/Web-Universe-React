@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import classes from "./LoginForm.module.css"
+
 
 const LoginForm = () => {
     const [username, setUsername] = useState('');
@@ -14,31 +16,30 @@ const LoginForm = () => {
         }
     };
 
-    return (
-        <div>
-            {!loggedIn ? (
-                <div>
-                    <h2>Вход</h2>
-                    <input
-                        type="text"
-                        placeholder="Имя пользователя"
-                        value={username}
-                        onChange={(e) => setUsername(e.target.value)}
-                    />
-                    <br />
-                    <input
-                        type="password"
-                        placeholder="Пароль"
-                        value={password}
-                        onChange={(e) => setPassword(e.target.value)}
-                    />
-                    <br />
-                    <button onClick={handleLogin}>Войти</button>
-                </div>
-            ) : (
-                <h2>Добро пожаловать, {username}!</h2>
-            )}
-        </div>
+    return (<>
+        {!loggedIn ? (
+            <form className={classes.form__login}>
+                <h2>Вход</h2>
+                <input
+                    type="text"
+                    placeholder="Имя пользователя"
+                    value={username}
+                    onChange={(e) => setUsername(e.target.value)}
+                    className={classes.form__input}
+                />
+                <input
+                    type="password"
+                    placeholder="Пароль"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    className={classes.form__input}
+                />
+                <button onClick={handleLogin} className={classes.login__btn}>Войти</button>
+            </form>
+        ) : (
+            <h2>Добро пожаловать, {username}!</h2>
+        )}
+    </>
     );
 };
 

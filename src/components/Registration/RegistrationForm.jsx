@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
-
+import classes from "./RegistrationForm.module.css"
 const RegistrationForm = () => {
-    const [formData, setFormData] = useState({
+    const initialFormData = {
         username: '',
         email: '',
         password: '',
         confirmPassword: '',
-    });
+    };
+    const [formData, setFormData] = useState(initialFormData);
 
     const [errors, setErrors] = useState({});
 
@@ -46,47 +47,64 @@ const RegistrationForm = () => {
         }
     };
 
+    const handleClearForm = () => {
+        setFormData(initialFormData);
+        setErrors({});
+    };
     return (
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className={classes.form__register}>
+            <h2>Регистрация</h2>
             <div>
-                <label>Имя пользователя:</label>
                 <input
                     type="text"
                     name="username"
                     value={formData.username}
+                    placeholder="Имя пользователя"
                     onChange={(e) => setFormData({ ...formData, username: e.target.value })}
+                    autoComplete="off"
+                    className={classes.form__input}
                 />
             </div>
             <div>
-                <label>Email:</label>
                 <input
                     type="email"
                     name="email"
+                    placeholder="Email"
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                    className={classes.form__input}
+
                 />
             </div>
             <div>
-                <label>Пароль:</label>
                 <input
                     type="password"
                     name="password"
+                    placeholder="Пароль"
                     value={formData.password}
                     onChange={(e) => setFormData({ ...formData, password: e.target.value })}
+                    autoComplete="new-password"
+                    className={classes.form__input}
+
                 />
             </div>
             <div>
-                <label>Подтвердите пароль:</label>
                 <input
                     type="password"
                     name="confirmPassword"
+                    placeholder="Подтвердите пароль"
                     value={formData.confirmPassword}
                     onChange={(e) => setFormData({ ...formData, confirmPassword: e.target.value })}
+                    className={classes.form__input}
+
                 />
             </div>
             {errors.requiredFields && <div>{errors.requiredFields}</div>}
             {errors.passwordMismatch && <div>{errors.passwordMismatch}</div>}
-            <button type="submit">Зарегистрироваться</button>
+            <div className={classes.form__buttons}>
+                <button type="submit" className={classes.register__btn}>Зарегистрироваться</button>
+                <button type="button" onClick={handleClearForm} className={classes.clear__btn}>Сброс</button>
+            </div>
         </form>
     );
 };
