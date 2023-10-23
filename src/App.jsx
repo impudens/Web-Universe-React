@@ -4,6 +4,8 @@ import Footer from './components/Footer/Footer';
 import CoursesList from './components/Courses/CoursesList';
 import CourseOverview from './components/CourseOverview/CourseOverview';
 import CourseChapter from './components/CourseOverview/CourseChapter/CourseChapter';
+import Login from './components/Login/LoginForm';
+import Registration from './components/Registration/RegistrationForm';
 import { layoutDataLvlFirst, layoutDataLvlSecond, jsDataLvlOne, jsDataLvlSecond, reactData } from './data/coursesModuletData';
 import { layoutDataLvlFirst_1_1 } from './data/chaptersData';
 
@@ -24,6 +26,8 @@ function App() {
               <Route path='/frontend/javascript-lvl-one' element={<CourseOverview data={jsDataLvlOne} />} />
               <Route path='/frontend/javascript-lvl-second' element={<CourseOverview data={jsDataLvlSecond} />} />
               <Route path='/frontend/react' element={<CourseOverview data={reactData} />} />
+              <Route path='/login' element={<Login />} />
+              <Route path='/register' element={<Registration />} />
               <Route path='/' element={<CoursesList />} />
             </Routes>
           </main>
