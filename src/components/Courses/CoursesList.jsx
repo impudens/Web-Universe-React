@@ -8,6 +8,20 @@ import 'swiper/css/pagination';
 import classes from './CoursesList.module.css';
 
 function CoursesList() {
+    const breakpoints = {
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 40,
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+        },
+        1024: {
+            slidesPerView: 3,
+            spaceBetween: 25,
+        },
+    };
     return (
         <>
             {Object.keys(coursesData).map(courseTitle => (
@@ -15,9 +29,8 @@ function CoursesList() {
                     <h2 className={classes.title}>{courseTitle}</h2>
                     <Swiper
                         modules={[Navigation, Pagination]}
-                        spaceBetween={25}
-                        slidesPerView={3}
                         navigation
+                        breakpoints={breakpoints}
                         pagination={{ clickable: true }}
                         className={classes.swiper}
                     >

@@ -98,7 +98,7 @@ const coursesData = {
         {
             image: '/assets/images/react-logo.svg',
             title: 'Вёрстка React-компонентов',
-            description: 'На этом курсе вы научитесь собирать и создавать интерактивные React-компоненты',
+            description: 'Как собирать и создавать React-компоненты',
             link: 'https://cloud.mail.ru/public/bswP/PeJvC61HB',
             linkName: 'Скачать'
         },
@@ -112,14 +112,14 @@ const coursesData = {
         {
             image: '/assets/images/reg-logo.png',
             title: 'Регулярные выражения для фронтендеров',
-            description: 'Регулярные выражения позволяют быстрее и эффективнее анализировать и искать информацию.',
+            description: 'Регулярные выражения для web-разработчка',
             link: 'https://cloud.mail.ru/public/sSzz/hrjd7dRZu',
             linkName: 'Скачать'
         },
         {
             image: '/assets/images/html-css-logo.png',
             title: 'Подготовка верстки для CMS',
-            description: 'Разработчику мидл-уровня важно верстать так, чтобы результат было удобно интегрировать в CMS',
+            description: 'Верстка для интеграции в CMS',
             link: 'https://cloud.mail.ru/public/Kqje/oXw86r1Bi',
             linkName: 'Скачать'
         },
@@ -133,14 +133,14 @@ const coursesData = {
         {
             image: '/assets/images/security-logo.png',
             title: 'Протоколы и сети: основы',
-            description: 'Для эффективного решения многих типовых задач разработчику важно понимать, как устроена передача данных по сетям через протоколы.',
+            description: 'Как устроена передача данных по сетям через протоколы.',
             link: 'https://cloud.mail.ru/public/yNHT/ZHDEadqhk',
             linkName: 'Скачать'
         },
         {
             image: '/assets/images/security-logo.png',
             title: 'Протоколы и сети: веб-безопасность',
-            description: 'Научитесь защищать компоненты веб-приложений и писать код, устойчивый ко взломам.',
+            description: 'Защита компонентов веб-приложений и написание кода, устойчивого ко взломам.',
             link: 'https://cloud.mail.ru/public/WbVj/Bw3HmGL28',
             linkName: 'Скачать'
         },
