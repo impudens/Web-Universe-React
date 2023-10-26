@@ -22,9 +22,25 @@
     text-align: left;
 }
 
+.otherLink {
+    text-decoration: none;
+    font-weight: 500;
+}
 
+.otherLink:hover {
+    text-decoration: underline;
+}
+
+.otherLink:visited {
+    color: green;
+}
 
 .link {
     text-decoration: none;
     font-weight: 500;
+}
+
+.link:visited {
+    color: green;
+
 }

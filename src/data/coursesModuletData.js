@@ -63,17 +63,17 @@ export const layoutDataLvlFirst = [
 export const layoutDataLvlSecond = [
     {
         title: "Старт",
-        link: "layout-lvl-1/chapters/start.html",
+        link: '/frontend/html-and-css-level-second/start',
         description: "Рассмотрим устройство веба и чем вы будете заниматься на работе. Установим и настроим инструменты для работы."
     },
     {
         title: "Методологии вёрстки",
-        link: "#",
+        link: "/frontend/html-and-css-level-second/metodologii-vyorstki",
         description: "Приёмы создания надёжной вёрстки"
     },
     {
         title: "Препроцессоры и автоматизация",
-        link: "#",
+        link: "/frontend/html-and-css-level-second/preproczessory-i-avtomatizacziya",
         description: "Взглянем на препроцессоры и разберёмся, чем они помогают в процессе вёрстки."
     },
     {

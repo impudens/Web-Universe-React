@@ -1,5 +1,6 @@
 import classes from './CourseChapter.module.css';
 import { useParams } from 'react-router-dom';
+import { NavLink } from 'react-router-dom'
 
 function CourseOverview(props) {
     const layoutData = props.data;
@@ -9,22 +10,32 @@ function CourseOverview(props) {
             <section className={classes.course}>
                 <h2 className={classes.title}>Оглавление раздела</h2>
                 <ol className={classes.list}>
-                    {layoutData.map((element, index) => (
-                        <li className={classes.item} key={index} >
-                            {element.video ? (
-                                <video src={element.video} controls className={classes.video}></video>
-                            ) : (
+                    {layoutData.map((element, index) => {
+                        let content = null;
+
+                        if (element.video) {
+                            content = <video src={element.video} controls className={classes.video}></video>;
+                        } else if (element.otherLink) {
+                            content = <a className={classes.otherLink} href={element.otherLink} rel='noreferrer' target='_blank'>{element.title}</a>;
+                        } else {
+                            content = (
                                 <>
-                                    <a href={element.link} className={classes.link}>
+                                    <NavLink to={element.link} className={classes.link}>
                                         {element.title}
-                                    </a>
+                                    </NavLink>
                                     {element.description && (
                                         <p className={classes.description}>{element.description}</p>
                                     )}
                                 </>
-                            )}
-                        </li>
-                    ))}
+                            );
+                        }
+
+                        return (
+                            <li className={classes.item} key={index}>
+                                {content}
+                            </li>
+                        );
+                    })}
                 </ol>
             </section>
         </>
