@@ -78,37 +78,47 @@ export const layoutDataLvlSecond = [
     },
     {
         title: "Адаптивные сетки",
-        link: "#",
+        link: "/frontend/html-and-css-level-second/adaptivnye-setki",
         description: "Узнаем как создавать адаптивные сетки с использованием гридов и флексов."
     },
     {
         title: "Адаптивные декоративные элементы",
-        link: "#",
+        link: "/frontend/html-and-css-level-second/adaptivnye-dekorativnye-elementy",
         description: "Разбираемся с адаптивными декоративными элементами. Делаем адаптивную вёрстку с резиновыми сетками."
     },
     {
         title: "Адаптивная графика",
-        link: "#",
+        link: "/frontend/html-and-css-level-second/adaptivnaya-grafika",
         description: "Погружаемся в адаптивную графику. Разбираемся с форматами и их назначением."
     },
     {
         title: "Векторная графика и оптимизация",
-        link: "#",
+        link: "/frontend/html-and-css-level-second/vektornaya-grafika-i-optimizacziya",
         description: "Научимся использовать векторную графику всеми возможными способами. Разберёмся, как использовать графику оптимально."
     },
     {
         title: "Погружение в автоматизацию",
-        link: "#",
+        link: "/frontend/html-and-css-level-second/pogruzhenie-v-avtomatizacziyu",
         description: "Подготовим сборку проекта для его публикации."
     },
     {
         title: "Производительность вёрстки",
-        link: "#",
+        link: "/frontend/html-and-css-level-second/proizvoditelnost-vyorstki",
         description: "Разберёмся с производительностью вёрстки и попробуем оптимизировать «узкие места»."
     },
     {
         title: "Финал",
-        link: "#",
+        link: "/frontend/html-and-css-level-second/final",
+        description: ""
+    },
+    {
+        title: "Критерии",
+        link: "/frontend/html-and-css-level-second/kriterii",
+        description: ""
+    },
+    {
+        title: "Список проектов",
+        link: "/frontend/html-and-css-level-second/projects",
         description: ""
     }
 ];
